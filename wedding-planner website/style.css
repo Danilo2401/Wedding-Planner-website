@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: auto;
+}
+
+:root{
+    --main-color: #1a1111;
+    --second-color: #dd9293;
+    --white-color: #FFF6F5;
+    --h2-font-size: 50px;
+    --h3-font-size: 32px;
+    --h4-font-size: 25px;
+    --p-font-size: 17px;
+    --font-dancing: 'Dancing Script', cursive;
+    --font-robotoslab: 'Roboto Slab', serif;
+    --opacity-text: 80%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto Slab', serif;
+    background-color: #faf6f6;
+    line-height: 1.5;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.heading-top{
+    font-family: var(--font-dancing) !important;
+    font-size: 30px !important;
+    font-weight: 600;
+    color: var(--main-color);
+    margin: 0 0 10px !important;
+}
+
+.hamburger-menu{
+    font-size: 28px;
+    color: var(--main-color);
+    display: none;
+}
+
+.header{
+    background: url("img/hero.jpg");
+    background-position: bottom center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .box-container{
+    padding: 20px 0;
+}
+
+.header .header-text{
+    padding: 240px 0 440px;
+    text-align: center;
+}
+
+.header-text h1{
+   color: var(--main-color);
+   font-family: var(--font-dancing);
+   font-size: 80px;
+   margin: 30px 0;
+}
+
+.header-text p{
+    color: var(--main-color);
+    font-family: var(--font-robotoslab);
+    font-size: var(--p-font-size);
+    margin: 30px 0;
+}
+
+.header-text button.learnmore{
+    width: 200px;
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color) ;
+    font-size: 20px;
+    font-family: var(--font-robotoslab);
+    padding: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+}
+
+.header .container .header-logo h3{
+    font-family: var(--font-dancing);
+    font-size: 30px;
+    margin: 0;
+    color: var(--main-color);
+}
+
+.header .container .header-links ul{
+    list-style: none;
+    padding: 0;
+}
+
+.header .container .header-links ul li a{
+    color: var(--main-color);
+    font-size: var(--p-font-size);
+}
+
+.header .container .header-links ul li a:hover{
+    color: var(--second-color);
+}
+
+.services{
+    margin: 80px 0;
+}
+
+.services .container{
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.services .container .service h3{
+    font-family: var(--font-robotoslab);
+    font-size: var(--h3-font-size);
+    color: var(--white-color);
+    margin: 0;
+}
+
+.services .container .service{
+    text-align: center;
+}
+
+.services .container .service p{
+    color: var(--white-color);
+    opacity: var(--opacity-text);
+}
+
+.services .container .service i{
+    font-size: 40px;
+    color: var(--second-color);
+    margin: 10px 0;
+}
+
+.aboutus{
+    margin: 180px 0;
+}
+
+.aboutus .aboutus-text h2{
+    font-family: var(--font-robotoslab);
+    font-size: var(--h2-font-size);
+    margin-top: 0;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.aboutus .aboutus-text p{
+    font-size: var(--p-font-size);
+    font-family: var(--font-robotoslab);
+    color: var(--main-color);
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.aboutus .aboutus-btn{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    width: 200px;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+}
+
+.aboutus .aboutus-btn:hover{
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+#scrollTop{
+    position: fixed;
+    right: 60px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    text-align: center;
+    font-size: 30px;
+    color: #eae0e0;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+
+.memories{
+    text-align: center;
+    margin: 180px 0;
+}
+
+.memories .gallery{
+    margin: 80px 0;
+}
+
+.memories .container h2{
+    color: var(--main-color);
+    font-size: var(--h2-font-size);
+    margin: 0;
+    color: var(--main-color);
+}
+
+.memories .gallery img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.decoration{
+    margin: 180px 0 0;
+}
+
+.decoration .container h2{
+    font-size: var(--h2-font-size);
+    color: var(--main-color);
+    font-family: var(--font-robotoslab);
+    margin: 0;
+}
+
+.decoration .container .heading-top,h2{
+    text-align: center;
+}
+
+.decoration .container h4{
+    color: var(--main-color);
+    font-family: var(--font-robotoslab);
+    font-size: var(--h4-font-size);
+}
+
+.decoration .container .service-text{
+    background-color: #C6BABA;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.decoration .container .service-text p,h4{
+    margin: 20px 0;
+}
+
+.decoration .container p{
+    font-size: var(--p-font-size);
+    font-family: var(--font-robotoslab);
+    color: var(--main-color);
+}
+
+.clients{
+    margin: 20px 0 180px;
+    text-align: center;
+}
+
+.clients .container h2{
+    color: var(--main-color);
+    font-size: var(--h2-font-size);
+    font-family: var(--font-robotoslab);
+    margin: 0;
+}
+
+.clients .container h3{
+    color: var(--main-color);
+    font-size: var(--h3-font-size);
+    font-family: var(--font-robotoslab);
+    margin: 10px 0;
+}
+
+.clients .container h4{
+    color: var(--main-color);
+    font-size: var(--h4-font-size);
+    font-family: var(--font-robotoslab);
+    margin: 10px 0;
+}
+
+.client img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.clients .container p{
+    font-size: var(--p-font-size);
+    color: var(--main-color);
+    font-family: var(--font-robotoslab);
+}
+
+.clients .container i{
+    color: var(--second-color);
+    font-size: 20px;
+}
+
+.clients .container .quote-right{
+    margin-left: 10px;
+}
+
+.clients .container .quote-left{
+    margin-right: 10px;
+}
+
+.footer{
+    margin: 0;
+    text-align: center;
+}
+
+.footer .footer-logo h3{
+    font-family: var(--font-dancing);
+    font-size: 80px;
+    margin: 30px 0;
+}
+
+.footer .footer-top .social-network i{
+    color: var(--main-color);
+    font-size: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer .footer-top .social-network i:hover{
+    color: var(--second-color);
+}
+
+.footer .footer-top .info-company{
+    font-size: var(--p-font-size);
+    font-family: var(--font-robotoslab);
+    color: var(--main-color);
+    margin: 30px 0 0;
+}
+
+.footer .footer-bottom{
+    border-top: 1px solid var(--main-color);
+    margin: 40px 0 0;
+}
+
+.footer .footer-bottom p{
+    margin: 25px 0;
+    font-size: var(--p-font-size);
+    font-family: var(--font-robotoslab);
+    color: var(--main-color);
+}
+
+.contact-form{
+    margin: 180px 0;
+}
+
+.contact-form .container .heading-top,h2{
+    text-align: center;
+}
+
+.contact-form .container h2{
+    font-size: var(--h2-font-size);
+    font-family: var(--font-robotoslab);
+    color: var(--main-color);
+    margin: 0;
+}
+
+.contact-form .form-group{
+    margin: 80px 0;
+}
+
+.contact-form .form-group input{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 5px;
+    font-family: var(--font-robotoslab);
+    height: 30px;
+    font-size: var(--p-font-size);
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid var(--main-color);
+}
+
+.contact-form .form-group textarea{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--font-robotoslab);
+    width: 50%;
+    border: 1px solid var(--main-color);
+    font-size: var(--p-font-size);
+    margin-bottom: 40px;
+}
+
+.contact-form .form-group #button-send{
+    display: block;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    width: 200px;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.contact-form .form-group #button-send:hover{
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+.x-menu{
+    display: none;
+}
+
+
+/*** Responsive design ***/
+
+
+
+@media screen and (min-width: 1280px) {
+    
+    .container{
+        width: 1200px;
+    }
+
+    .header .container .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .box-container .header-links ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header .box-container .header-links ul li{
+        padding: 0 15px;
+    }
+
+    .services .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services .container .service{
+        flex-basis: 30%;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aboutus .aboutus-text{
+        flex-basis: 45%;
+    }
+
+    .aboutus .aboutus-img{
+        flex-basis: 45%;
+    }
+
+    .memories .container .gallery{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .memories .gallery .main-img{
+        flex-basis: 62%;
+    }
+    
+    .memories .gallery .sidebar-img{
+        flex-basis: 30%;
+    }
+
+    .decoration .container .box-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .decoration .container .box-container{
+        margin: 80px 0;
+    }
+
+    .decoration .container .wrap-box,.set-services{
+        margin: 0 20px 60px;
+    }
+
+    .clients .container .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .clients .container .client{
+        flex-basis: 45%;
+    }
+
+    .client .under-client{
+        margin: 60px 0 0;
+    }
+
+}
+
+@media screen and (max-width: 1280px) and (min-width: 992px) {
+
+    .container{
+        width: 90%;
+    }
+
+    .header .container .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .box-container .header-links ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header .box-container .header-links ul li{
+        padding: 0 15px;
+    }
+
+    .services .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services .container .service{
+        flex-basis: 30%;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aboutus .aboutus-text{
+        flex-basis: 45%;
+    }
+
+    .aboutus .aboutus-img{
+        flex-basis: 45%;
+    }
+
+    .memories .gallery{
+        margin: 80px 0;
+    }
+
+    .memories .container .gallery{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .memories .gallery .main-img{
+        flex-basis: 62%;
+    }
+    
+    .memories .gallery .sidebar-img{
+        flex-basis: 30%;
+    }
+
+    .memories .container .gallery{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .memories .gallery .main-img{
+        flex-basis: 62%;
+    }
+    
+    .memories .gallery .sidebar-img{
+        flex-basis: 30%;
+    }    
+
+    .decoration .container .box-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .decoration .container .box-container{
+        margin: 80px 0;
+    }
+
+    .decoration .container .wrap-box,.set-services{
+        margin: 0 20px 60px;
+    }
+
+    .clients .container .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .clients .container .client{
+        flex-basis: 45%;
+    }
+
+    .client .under-client{
+        margin: 60px 0 0;
+    }
+ 
+}
+
+@media screen and (max-width: 992px) and (min-width:768px){
+
+    h1{
+        font-size: 60px !important;
+    }
+    h2{
+        font-size: 45px !important;
+    }
+    h3{
+        font-size: 35px !important;
+    }
+    p{
+        font-size: 17px !important;
+    }
+    
+    .container{
+        width: 90%;
+    }
+
+    .header .container .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .box-container .header-links ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header .box-container .header-links ul li{
+        padding: 0 15px;
+    }
+
+    .services .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services .container .service{
+        flex-basis: 30%;
+    }
+
+    .aboutus .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aboutus .aboutus-text{
+        flex-basis: 45%;
+    }
+
+    .aboutus .aboutus-img{
+        flex-basis: 45%;
+    }
+
+    .memories .container .gallery{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .memories .gallery .main-img{
+        flex-basis: 62%;
+    }
+    
+    .memories .gallery .sidebar-img{
+        flex-basis: 30%;
+    }
+
+    .decoration .container .box-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .decoration .container .box-container{
+        margin: 80px 0;
+    }
+
+    .decoration .container .wrap-box,.set-services{
+        margin: 0 20px 60px;
+    }
+
+    .clients .container .box-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 80px 0;
+    }
+
+    .clients .container .client{
+        flex-basis: 45%;
+    }
+
+    .client .under-client{
+        margin: 60px 0 0;
+    }
+
+    .footer .footer-logo h3{
+        font-size: 50px !important;
+    }
+
+    .contact-form .form-group input{
+        width: 80%;
+        height: 80%;
+    }
+
+    .contact-form .form-group textarea{
+        width: 80%;
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    h1{
+        font-size: 50px !important;
+    }
+    h2{
+        font-size: 35px !important;
+    }
+    h3{
+        font-size: 25px !important;
+    }
+    p{
+        font-size: 16px !important;
+    }
+
+    .container{
+        width: 85%;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+    .header-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-links{
+        display: none;
+        text-align: center;
+    }
+
+    .header .container .header-links ul {
+        margin: 30px 0;
+    }
+
+    .header-links ul li{
+        margin: 20px 0;
+    }
+    
+    .header .header-text{
+        padding: 200px 0 400px;
+        text-align: center;
+    }
+
+    .services .service{
+        margin: 80px 0;
+    }
+
+    .aboutus{
+        text-align: center;
+    }
+
+    .aboutus .aboutus-text{
+        margin: 80px 0;
+        text-align: center;
+    }
+
+    .aboutus .aboutus-text h2{
+        text-align: center;
+    }
+
+    .memories .gallery img{
+        margin: 20px 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .decoration .box-container{
+        margin: 80px 0;
+    }
+
+    .clients{
+        margin: 180px 0;
+    }
+
+    .box-container .client,.under-client{
+        margin: 40px 0;
+    }
+
+    .footer .footer-logo h3{
+        font-size: 45px !important;
+    }
+
+    .contact-form .form-group input{
+        width: 80%;
+        height: 80%;
+    }
+
+    .contact-form .form-group textarea{
+        width: 80%;
+        height: 80%;
+    }
+
+}
